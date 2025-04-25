@@ -2,6 +2,20 @@
 
 Questo progetto è strutturato in tre lezioni per mostrare l'evoluzione del codice:
 
+## Struttura del Progetto
+```
+├── assets/
+│   └── images/
+│       └── cropped-cropped-logo_aidap-1.png
+├── lezione1-html/
+│   └── index.html
+├── lezione2-html-css-interno/
+│   └── indexcss.html
+└── lezione3-html-css-esterno/
+    ├── index.html
+    └── styles.css
+```
+
 ## Lezione 1: HTML Puro
 - Solo struttura HTML
 - Nessuno stile
@@ -23,4 +37,9 @@ Questo progetto è strutturato in tre lezioni per mostrare l'evoluzione del codi
 1. Codice più organizzato
 2. Riutilizzo degli stili
 3. Manutenzione più semplice
+4. Cache del browser più efficiente
+
+### Note
+- Le immagini sono centralizzate nella cartella `assets/images`
+
 
