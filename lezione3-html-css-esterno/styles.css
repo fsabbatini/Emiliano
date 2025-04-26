@@ -1,29 +1,61 @@
-/* Stile generale */
+/* Stile base */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     color: #333;
+    padding: 1rem;
 }
 
 /* Header */
 header {
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-bottom: 3px solid #0071ce;
+    border-bottom: 3px solid #218838;
     text-align: center;
-}
-
-.logo {
-    margin-bottom: 1rem;
 }
 
 .logo img {
     max-width: 300px;
-    height: auto;
+    margin: 1rem auto;
     display: block;
-    margin: 0 auto;
 }
 
-/* ... resto del CSS ... */
+/* Navigazione */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #218838;
+    text-decoration: none;
+}
+
+/* Contenuto */
+h1, h2, h3 {
+    color: #218838;
+}
+
+/* Servizi */
+.servizi > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.servizi div > div {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+}
+
+/* Footer */
+footer {
+    background-color: #218838;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem -1rem -1rem;
+    padding: 1rem;
+}

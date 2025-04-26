@@ -5,117 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIDAP Semplificato con CSS</title>
     <style>
-        /* Stile generale */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+/* Stile base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 1rem;
+}
 
-        /* Header */
-        header {
-            background-color: #fff;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-bottom: 3px solid #0071ce;
-            text-align: center;      /* Centra il contenuto dell'header */
-        }
+/* Header */
+header {
+    border-bottom: 3px solid #218838;
+    text-align: center;
+}
 
-        .logo {
-            margin-bottom: 1rem;    /* Aggiunge spazio sotto il logo */
-        }
+.logo img {
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+}
 
-        .logo img {
-            max-width: 300px;
-            height: auto;
-            display: block;
-            margin: 0 auto;         /* Centra l'immagine */
-        }
+/* Navigazione */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-        nav {
-            margin-top: 1rem;       /* Aggiunge spazio sopra il menu */
-        }
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+nav a {
+    color: #218838;
+    text-decoration: none;
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+/* Contenuto */
+h1, h2, h3 {
+    color: #218838;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #0071ce;
-            font-weight: bold;
-        }
+/* Servizi */
+.servizi > div {
+    display: flex;
+    gap: 1rem;
+}
 
-        nav a:hover {
-            color: #004c8c;
-        }
+.servizi div > div {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+}
 
-        /* Sezioni */
-        section {
-            padding: 2rem;
-        }
-
-        h1 {
-            color: #0071ce;
-            font-size: 2rem;
-        }
-
-        h2 {
-            color: #0071ce;
-        }
-
-        /* Servizi */
-        .servizi div {
-            display: flex;
-            gap: 20px;
-        }
-
-        .servizi div div {
-            flex: 1;
-            padding: 1rem;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            background-color: #f8f9fa;
-        }
-
-        .servizi div div:hover {
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0071ce;
-            color: white;
-            padding: 2rem;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
+/* Footer */
+footer {
+    background-color: #218838;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem -1rem -1rem;
+    padding: 1rem;
+}
     </style>
 </head>
 <body>
-    <!-- Il resto del codice HTML rimane identico a index.html -->
-    <!-- Header con logo e menu -->
+    <!-- Lo stesso contenuto HTML del file index.html -->
     <header>
         <div class="logo">
-            <img src="images/cropped-cropped-logo_aidap-1.png" alt="Logo AIDAP">
+            <img src="../assets/images/cropped-cropped-logo_aidap-1.png" alt="Logo AIDAP">
         </div>
         <nav>
             <ul>
